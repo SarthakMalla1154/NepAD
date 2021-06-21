@@ -1,0 +1,91 @@
+@mixin burger-line {
+    height: 0.2rem;
+    width: 1.3rem;
+    background: #F0D9E7;
+    margin-bottom: 0.3rem;
+} 
+
+.nav-container{
+    background-color: #A239EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 8vh;
+    z-index: 99;
+    .nepad-title{
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: "Titillium Web";
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+        padding-left: 1rem;
+        .home-link{
+            color: #F0D9E7;
+        }
+    }
+    #nav-items{
+        width: 55%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-self: center;
+        list-style: none;
+        .nav-list{
+            font-size: 1.2rem;
+            .nav-links{
+                text-decoration: none;
+                color: #f0e6ec;
+            }
+        }
+    }
+    #burger{
+        margin-right: 2rem;
+        cursor: pointer;
+        display: none;
+        #line1{
+            @include burger-line();
+        }
+        #line2{
+            @include burger-line();
+        }
+        #line3{
+            @include burger-line();
+            margin-bottom: 0;
+        }      
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-container{
+        z-index: 99;
+        #nav-items{
+            width: 40%;
+            height: 90vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 6.3rem;
+            background-color: #A239EA;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            z-index: 100;
+        }
+        #burger{
+            display: block;
+        }
+    }
+}
+
+.nav-active{
+    transform: translateX(0%) !important;
+}

@@ -1,0 +1,46 @@
+.main-profile-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.9fr;
+    align-self: center;
+    width: 20rem;
+    height: 25rem;
+    background: pink;
+    border-radius: 70px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 20px gray;
+  }
+  
+  .photo-container{
+    background-image: url("./images/astronomy.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .profile-pic{
+    position: absolute;
+    left: 6.4rem;
+    top: 3rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    border: solid red 3px;
+    border-color: pink;
+  }
+  
+  .profile-credential-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .icons{
+    width: 2rem;
+    padding: 0 0.7rem;
+  }
+  
+  .person-description{
+    text-align: center;
+  }
