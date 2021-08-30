@@ -1,0 +1,41 @@
+.hp-events-cards-container{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "main-card upcoming-events-card" "other-events-cards other-events-cards";
+
+    background-color: #f2e5fa;
+}
+
+.hp-important-recent-event-card{
+    grid-area: main-card;
+    // max-height: 20rem;
+    margin: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .main-event-img-container{
+        width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+
+        .main-event-image{
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+}
+
+.hp-upcoming-events-card{
+    grid-area: upcoming-events-card;
+}
+
+.hp-recent-events-cards{
+    grid-area: other-events-cards;
+}

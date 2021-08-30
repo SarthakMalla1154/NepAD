@@ -1,0 +1,113 @@
+.nav-bar{
+    background-color: #A239EA;
+    height: 83px;
+    // flex-box
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // font
+    font-family: 'Crimson Pro', serif;
+    // other elements
+    .logo{
+        // font
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 2.5rem;
+        padding: 10px 0;
+        padding-left: 50px;
+
+        .logo-link{
+            text-decoration: none;
+        }
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-right: 2rem;
+        .nav-item{
+            padding-left: 4rem;
+            font-size: 1.2rem;
+            .nav-item-link{
+                text-decoration: none;
+                // color
+                color: rgb(228, 228, 228);
+            }
+        }
+    }
+    .burger{
+        display: none;
+        margin-right: 2.5rem;
+        cursor: pointer;
+        .line1{
+            background-color: white;
+            height: 3px;
+            width: 20px;
+            margin-bottom: 3px;
+        }
+        .line2{
+            background-color: white;
+            height: 3px;
+            width: 20px;
+            margin-bottom: 3px;
+        }
+        .line3{
+            background-color: white;
+            height: 3px;
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        .nav-links{
+            background-color: #9534d6;
+            width: 100%;
+            // position
+            position: absolute;
+            padding: 0;
+            padding-top: 10px;
+            top: 83px;
+            left: 0;
+            // flex
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            // animation
+            display: none;
+            animation: growDown 0.5s ease-in-out forwards;
+            transform-origin: top center;
+
+            z-index: 99;
+
+            .nav-item{
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+        }
+        .burger{
+            display: block;
+        }
+    }
+
+    .burger-clicked{
+        display: block !important;
+    }
+
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0);
+        }
+        80% {
+            transform: scaleY(1.1);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+}
+
+

@@ -1,199 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Crimson+Pro:wght@300&family=Titillium+Web:wght@600&family=Vollkorn&family=Ubuntu:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Crimson+Pro:wght@300&family=Titillium+Web:wght@700&family=Vollkorn&display=swap" rel="stylesheet">
 
     <title>NepAD | NYUAD Nepal</title>
-  </head>
-  <body>
-    <!-- Top Navigation Bar -->
-    <nav class="nav-container">
-      <h1 class="nepad-title"><a class="home-link" href="#">NepAD</a></h1>
-      <ul id="nav-items">
-        <li class="nav-list"><a class="nav-links" href="#">Home</a></li>
-        <li class="nav-list">
-          <a class="nav-links" href="#">Announcements</a>
-        </li>
-        <li class="nav-list"><a class="nav-links" href="#">Posts </a></li>
-        <li class="nav-list"><a class="nav-links" href="#">Profiles</a></li>
-      </ul>
-      <div id="burger">
-        <div id="line1"></div>
-        <div id="line2"></div>
-        <div id="line3"></div>
-      </div>
-    </nav>
-    <!-- Top Navigation End -->
-
-    <!-- HomePage First Look Panel -->
-    <div id="hp-intro-block">
-      <div class="hp-img-container">
-        <img src="./images/child-monk.jpg" alt="scene" />
-      </div>
-
-      <div class="hp-intro-title">
-        <h1 id="hp-title">Where Cultures Meet...</h1>
-        <h3 id="hp-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </h3>
-        <!-- <button class="button">Learn More</button> -->
-      </div>
-    </div>
-
-    <!-- After Scrolling -->
-    <div class="hp-people-profile">
-        <div class="profile-title">
-            <h2>Who We Are...</h2>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1 class="logo"><a class="logo-link" href="./index.html">NepAD</a></h1>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-item"><a class="nav-item-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="ss1-headding">
+                <h1 class="ss-heading-title">
+                    <strong><div>Where Cultures</div> Meet</strong>
+                </h1>
+                <p class="ss-heading-subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
         </div>
-        <div class="profile-cards-container">
-            
-            <!-- CARD START -->
-            <div class="main-profile-card">
-                <div class="photo-container">
-                    <img class="profile-pic" src="./images/proflie-card/woman.jpg" alt="woman" />
-                </div>
-                <div class="profile-credential-container">
-                    <h3 class="name">SARTHAK MALLA</h3>
-                    <div class="profile-links">
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/facebook.png" alt="facebook"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/instagram.png" alt="instagram"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/twitter.png" alt="twitter"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/linkedin.png" alt="linkedin"
-                        /></a>
-                    </div>
-                    <p class="person-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
-                        non arcu risus quis varius.
-                    </p>
-                </div>
-            </div>
-            <!-- CARD END -->
-            <!-- CARD START -->
-            <div class="main-profile-card">
-                <div class="photo-container">
-                    <img class="profile-pic" src="./images/proflie-card/woman.jpg" alt="woman" />
-                </div>
-                <div class="profile-credential-container">
-                    <h3 class="name">SARTHAK MALLA</h3>
-                    <div class="profile-links">
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/facebook.png" alt="facebook"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/instagram.png" alt="instagram"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/twitter.png" alt="twitter"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/linkedin.png" alt="linkedin"
-                        /></a>
-                    </div>
-                    <p class="person-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
-                        non arcu risus quis varius.
-                    </p>
-                </div>
-            </div>
-            <!-- CARD END -->
-            <!-- CARD START -->
-            <div class="main-profile-card">
-                <div class="photo-container">
-                    <img class="profile-pic" src="./images/proflie-card/woman.jpg" alt="woman" />
-                </div>
-                <div class="profile-credential-container">
-                    <h3 class="name">SARTHAK MALLA</h3>
-                    <div class="profile-links">
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/facebook.png" alt="facebook"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/instagram.png" alt="instagram"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/twitter.png" alt="twitter"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/linkedin.png" alt="linkedin"
-                        /></a>
-                    </div>
-                    <p class="person-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
-                        non arcu risus quis varius.
-                    </p>
-                </div>
-            </div>
-            <!-- CARD END -->
-            <!-- CARD START -->
-            <div class="main-profile-card">
-                <div class="photo-container">
-                    <img class="profile-pic" src="./images/proflie-card/woman.jpg" alt="woman" />
-                </div>
-                <div class="profile-credential-container">
-                    <h3 class="name">SARTHAK MALLA</h3>
-                    <div class="profile-links">
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/facebook.png" alt="facebook"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/instagram.png" alt="instagram"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/twitter.png" alt="twitter"
-                        /></a>
-    
-                        <a href="#"
-                        ><img class="icons" src="./images/proflie-card/linkedin.png" alt="linkedin"
-                        /></a>
-                    </div>
-                    <p class="person-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
-                        non arcu risus quis varius.
-                    </p>
-                </div>
-            </div>
-            <!-- CARD END -->
+        <!-- History / Introduction Panel -->
+        
+        <div class="intro-container">
+            <p class="intro-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <p class="intro-content btm-paragraph">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
-    </div>
 
-    <script src="./scripts/script.js"></script>
-  </body>
+        <!-- Events Cards -->
+        <div class="hp-events-cards-container">
+            <div class="hp-important-recent-event-card">
+                <div class="main-event-img-container">
+                    <img class="main-event-image" src="./images/event-test.jpg" alt="main-event-image">
+                </div>
+                <div class="main-event-content-container">
+                    <div class="main-event-text-container">
+                        <h4 class="main-event-title">
+                            Shift the overall look and feel by adding these wonderful 
+                            touches to furniture in your home
+                        </h4>
+                        <p class="main-event-description">
+                            Ever been in a room and felt like something was missing? Perhaps 
+                            it felt slightly bare and uninviting. I’ve got some simple tips 
+                            to help you make any room feel complete.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hp-upcoming-events-card">
+    
+            </div>
+            <div class="hp-recent-events-cards">
+    
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
 </html>

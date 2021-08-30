@@ -1,0 +1,75 @@
+.slideshow-container{
+    background-image: url("../images/SlideShow-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+
+    font-family: "Crimson Pro";
+
+    .ss1-headding{
+        width: 70ch;
+        position: absolute;
+        top: 10%;
+
+        .ss-heading-title{
+            text-align: center;
+            font-size: 3.5vw;
+            line-height: 0.8;
+            margin-bottom: 0.6rem;
+        }
+        .ss-heading-subtitle{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    .slideshow-container{
+        .ss1-headding{
+            width: 45ch;
+            
+            .ss-heading-subtitle{
+                font-size: 1.7vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow-container{
+        .ss1-headding{
+            width: 45ch;
+
+            .ss-heading-title{
+                font-size: 5vw;
+            }
+            .ss-heading-subtitle{
+                font-size: 2.4vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .slideshow-container{
+        .ss1-headding{
+            width: 45ch;
+
+            .ss-heading-title{
+                font-size: 7vw;
+            }
+            .ss-heading-subtitle{
+                font-size: 3vw;
+            }
+        }
+    }
+}
